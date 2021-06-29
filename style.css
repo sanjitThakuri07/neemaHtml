@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 16px => 100% * 1rem/ 
+  /* 1px => 100/16 */
+  /* 10px => 100/16 * 10 => 62.5%* = 1rem/
+  /* 1rem = 16px */
+}
+
+p {
+  padding: 2rem;
+  text-align: center;
+  /* background: blue; */
+}
+
+a {
+  text-align: center;
+  padding: 20px;
+  background: yellow;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+span {
+  padding: 20px;
+  background: red;
+}
+
+div {
+  width: 600px;
+  /* height: 200px; */
+  background-color: red;
+  border: 5px solid black;
+  margin: 20px;
+  /* padding: 20px; */
+}
+
+ul {
+  padding-left: 10rem;
+  list-style: none;
+  /* list-style-type: lower-roman; */
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li:hover,
+ul li:active {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.child {
+  background-color: blue;
+  margin: 0;
+  margin-bottom: 2rem;
+  border: none;
+  /* width: 600px; */
+  width: 10%;
+  height: 200px;
+}
+
+/* inline, inline-block, block  */
+/* block => parent full width  */
+/* inline => take space that is required for it to fit in itself */
+/* inline-block => inherit both */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    /* background-color: blue; */
+  }
+}
